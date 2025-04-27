@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coder-Decoder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="icon" href="lock-icon.png" type="image/png">
+  <style>
+    /* Color Scheme */
+    :root {
+      --light-blue: #d8eefe;
+      --medium-blue: #4f94d4;
+      --dark-blue: #12326f;
+      --background-color: #f5f9ff;
+    }
+
+    body {
+      background-color: var(--background-color);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: var(--light-blue) !important;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .navbar a {
+      color: var(--dark-blue) !important;
+      font-weight: bold;
+      font-size: 18px;
+      margin-right: 25px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: var(--medium-blue) !important;
+      text-decoration: none;
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
+      color: var(--dark-blue) !important;
+      margin-right: 50px;
+    }
+
+    h1 {
+      color: var(--dark-blue);
+      text-align: center;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+
+    label {
+      font-size: 20px;
+      color: var(--dark-blue);
+    }
+
+    #encodeInput, #encodedOutput, #decodeInput, #decodedOutput {
+      border: 2px solid var(--light-blue);
+      border-radius: 8px;
+    }
+
+    .btn-primary {
+      background-color: var(--medium-blue);
+      border: none;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--dark-blue);
+    }
+
+    footer {
+      background-color: var(--light-blue);
+      padding: 15px 0;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+      text-align: center;
+      color: var(--dark-blue);
+      font-weight: 500;
+    }
+
+    footer a {
+      color: var(--medium-blue);
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: var(--dark-blue);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="landing Page.html">Coder-Decoder</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="Coder1.html">Coder 1</a>
+          <a class="nav-item nav-link" href="Coder2.html">Coder 2</a>
+          <a class="nav-item nav-link" href="Coder3.html">Coder 3</a>
+          <a class="nav-item nav-link" href="Coder4.html">Coder 4</a>
+          <a class="nav-item nav-link" href="Coder5.html">Coder 5</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Coder 1</h1>
+
+  <div class="container mt-4">
+    <div class="form-group">
+      <label for="encodeInput">Enter text to encode:</label>
+      <input type="text" id="encodeInput" class="form-control" placeholder="Enter text here">
+    </div>
+    <div class="form-group">
+      <label for="encodedOutput">Encoded text:</label>
+      <input type="text" id="encodedOutput" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+      <label for="decodeInput">Enter text to decode:</label>
+      <input type="text" id="decodeInput" class="form-control" placeholder="Enter text here">
+    </div>
+    <div class="form-group">
+      <label for="decodedOutput">Decoded text:</label>
+      <input type="text" id="decodedOutput" class="form-control" readonly>
+    </div>
+  </div>
+  <div class="container text-center mt-4">
+    <a href="Coder2.html" class="btn btn-primary btn-lg">Go to Coder 2</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>© 2023 Coder-Decoder. All rights reserved.</p>
+      <p>Follow us on: 
+        <a href="https://www.geminisolutions.com/">Gemini</a> | 
+        <a href="https://x.com/Viraj_Singh11">Twitter</a> | 
+        <a href="https://www.instagram.com/theycallmeveeru/">Instagram</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="Cd1.js"></script>
+
+</body>
+</html>
